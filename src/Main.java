@@ -1,13 +1,10 @@
-import java.util.Arrays;
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 public class Main {
     static Scanner scanner= new Scanner(System.in);
     static int position;
-    static String winner = null;
     static int firstPlayer = setPlayer();
-    static int secondPlayer = (firstPlayer == 1 ? 2 : 1);
     static int[] playerList = new int[9];
     static int currentPlayer = firstPlayer;
     static int count = 0;
@@ -15,10 +12,8 @@ public class Main {
     public static void main(String[] args) {
 
         welcomeMessage();
-//        setPlayer();
         askInputToPlayer();
 
-//        Arrays.asList(playerList).forEach(System.out::println);
     }
 
     private static void toggleCurrentPlayer() {
@@ -77,13 +72,6 @@ public class Main {
         else
             return false;
 
-//        for (int a = 0; a < 9; a++) {
-//            if (Arrays.asList(playerList).contains(String.valueOf(a + 1))) {
-//                break;
-//            } else if (a == 8)
-//                return "draw";
-//        }
-//        return null;
     }
 
 
